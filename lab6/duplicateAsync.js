@@ -2,7 +2,7 @@
 
 Array.prototype.removeDuplicatesAsync = async function(){
     let dupArr = this;   
-    function res(){
+   async function res(){
         let filteredArr = [];
         for(let i=0;i<dupArr.length;i++){
         if(!filteredArr.includes(dupArr[i])){
