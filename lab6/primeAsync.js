@@ -9,11 +9,15 @@ const isPrime = num => new Promise((resolve, reject) => {
 });
 
  async function isPrimeAsync(num){
-      
-     console.log(await isPrime(num));
+    try{
+         console.log(await isPrime(num));
+    } catch(error){
+        console.log({prime: false});
+    }
+    
 
 }
 
 console.log('start');
-isPrimeAsync(7)
+isPrimeAsync(2)
 console.log('end');
