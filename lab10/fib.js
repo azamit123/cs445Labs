@@ -35,8 +35,8 @@ console.time("mine");
 console.log(fibonacci(30));
 console.timeEnd("mine");
 
-console.time("tina");
+console.time("regular");
 console.log(fibonacci2(30));
-console.timeEnd("tina");
+console.timeEnd("regular");
 
 
